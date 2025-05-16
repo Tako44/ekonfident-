@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://www.youtube.com https://s.ytimg.com; script-src 'self' https://www.youtube.com https://s.ytimg.com 'unsafe-inline'">
+  <title>Tako - Info</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="icons/logo.png" type="image/png">
+</head>
+<body>
+  <div id="welcome-screen">
+    <h1 id="enter-text">Naciśnij <span class="enter-key">Enter</span>, aby rozpocząć</h1>
+  </div>
+
+  <div id="youtube-container">
+    <div id="youtube-background"></div>
+  </div>
+
+  <div class="volume-container" id="volume-control">
+    <div class="volume-icon-wrapper" id="volume-icon-wrapper">
+      <img src="icons/1.png" alt="Volume" class="volume-icon" id="volume-icon">
+    </div>
+    <input type="range" min="0" max="1" step="0.01" value="1" class="volume-slider" id="volume-slider">
+    <div class="music-icon-wrapper">
+      <img src="icons/strzalka.png" alt="Music" class="music-icon" id="music-icon">
+    </div>
+  </div>
+
+  <div class="profile">
+    <img src="icons/logo.png" alt="Avatar" class="avatar" id="avatar-click">
+    <h1>Tak o</h1>
+    <p class="email">Contact: Discord-tako8184</p>
+
+    <div class="socials">
+      <a href="https://www.youtube.com/@Tak_o" target="_blank" rel="noopener noreferrer"><img src="icons/youtube.png" alt="YT"></a>
+      <a href="https://www.twitch.tv/7tak_o7" target="_blank" rel="noopener noreferrer"><img src="icons/twitch.png" alt="Twitch"></a>
+    </div>
+
+    <div class="links">
+      <a href="https://steamcommunity.com/profiles/76561198297009868/" class="link" target="_blank" rel="noopener noreferrer">
+        <div class="link-icon">
+          <img src="icons/steam.png" alt="Steam">
+        </div>
+        <span>Steam</span>
+      </a>
+      <a href="https://discord.gg/nRmW6FhPrn" class="link" target="_blank" rel="noopener noreferrer">
+        <div class="link-icon">
+          <img src="icons/discord.png" alt="Discord">
+        </div>
+        <span>Discord CM</span>
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    <div>Created by <a href="https://discord.com/users/430017415083065348" target="_blank" rel="noopener noreferrer" id="creator-link">tako8184</a></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
