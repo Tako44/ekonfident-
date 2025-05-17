@@ -292,7 +292,7 @@ footer a {
   transition: color 0.3s;
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 401px) {
   .volume-container:hover {
     box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
   }
@@ -351,7 +351,7 @@ footer a {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 400px) {
   #welcome-screen {
     display: none !important;
   }
