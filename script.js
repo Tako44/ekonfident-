@@ -16,11 +16,13 @@ document.addEventListener('DOMContentLoaded', function() {
   };
 
   const songs = [
-    { id: 'vLd0icBPnfU', title: 'SENTINO x TRUEMAN - SCAM', start: 10 },
+    { id: 'mO2tvDUrjgU', title: 'Nigdy wiecej broke', start: 10 },
+    { id: 'LuWe38vEVGw', title: 'dzentelmenel', start: 17 },
+    { id: 'nsCppZIUxKk', title: 'ANTOS - AFERA ft. SHEDER', start: 91 },
+    { id: 'vLd0icBPnfU', title: 'SENTINO x TRUEMAN - SCAM', start: 10 }, 
     { id: 'zqJb5YZ_fuY', title: 'Sentino - LOEWE', start: 10 },
     { id: 'MzWibQ1MP40', title: 'olszakumpel - BENZ ft. arbuzkumpel, ZetHa (prod. adimajer&ohPaul)', start: 11 },
     { id: 'B0B_mQZfeiY', title: 'Sentino - Casablanca (prod. Crackhouse)', start: 9 },
-    { id: 'jTtrwPzEm7g', title: 'Bajorson, Dawid Obserwator, DJ Killer, David Tango - Bailando', start: 22 },
     { id: 'sUatJmyK8U0', title: 'Gryzzly - JAK NIKT', start: 11 },
     { id: 'q_NE6N2H6P4', title: 'Piwko nie mozna', start: 17 },
     { id: 'HyPEhaWVYis', title: 'Peja - Frajerhejt 9.12/DTKJ (Dlaczego Tede Kurwą Jest)', start: 191 }
