@@ -16,16 +16,9 @@ document.addEventListener('DOMContentLoaded', function() {
   };
 
   const songs = [
-    { id: 'mO2tvDUrjgU', title: 'Nigdy wiecej broke', start: 10 },
-    { id: 'LuWe38vEVGw', title: 'dzentelmenel', start: 17 },
-    { id: 'nsCppZIUxKk', title: 'ANTOS - AFERA ft. SHEDER', start: 91 },
-    { id: 'vLd0icBPnfU', title: 'SENTINO x TRUEMAN - SCAM', start: 10 }, 
-    { id: 'zqJb5YZ_fuY', title: 'Sentino - LOEWE', start: 10 },
-    { id: 'MzWibQ1MP40', title: 'olszakumpel - BENZ ft. arbuzkumpel, ZetHa (prod. adimajer&ohPaul)', start: 11 },
-    { id: 'B0B_mQZfeiY', title: 'Sentino - Casablanca (prod. Crackhouse)', start: 9 },
-    { id: 'sUatJmyK8U0', title: 'Gryzzly - JAK NIKT', start: 11 },
-    { id: 'q_NE6N2H6P4', title: 'Piwko nie mozna', start: 17 },
-    { id: 'HyPEhaWVYis', title: 'Peja - Frajerhejt 9.12/DTKJ (Dlaczego Tede Kurwą Jest)', start: 191 }
+    { id: 'lCKhHduVWI0', title: 'skumaj polski cos tam', start: 11 },
+    { id: 'efL_tjWS3bk', title: 'jerk freestyle', start: 9 }, 
+    { id: 'ZfUSoqxsR6Y', title: 'SHEDER - DALEKO DOM', start: 25 }
   ];
 
   let currentSongIndex = 0;
@@ -103,34 +96,27 @@ document.addEventListener('DOMContentLoaded', function() {
   function initVolumeControl() {
     if (isMobile || !elements.volume.container) return;
     
-    // Ukryj suwak na początku
-    elements.volume.container.style.display = 'none';
+    elements.volume.container.style.display = 'flex';
+    elements.volume.container.classList.add('visible');
+    volumeControlVisible = true;
     
-    // Kliknięcie ikony głośności - mute/unmute
     elements.volume.wrapper.addEventListener('click', function(e) {
       e.stopPropagation();
       toggleMute();
     });
     
-    // Kliknięcie avatara - pokaż/ukryj kontrolki
-    elements.avatar.addEventListener('click', function() {
-      toggleVolumeControl();
-    });
-    
-    // Obsługa suwaka głośności
     elements.volume.slider.addEventListener('input', function() {
       const vol = parseFloat(this.value);
       if (youtubePlayer) {
         youtubePlayer.setVolume(vol * 100);
         lastVolume = vol;
         if (isMuted) {
-          toggleMute(false); // Automatycznie wyłącz mute przy regulacji
+          toggleMute(false);
         }
       }
       updateVolumeIcon(vol);
     });
 
-    // Kliknięcie ikony zmiany utworu
     elements.musicIcon.addEventListener('click', function(e) {
       e.stopPropagation();
       changeSong();
